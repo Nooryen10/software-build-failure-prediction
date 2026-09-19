@@ -2,3 +2,5 @@ data/raw/
 *.csv.gz
 data/processed/*.csv
 results/*.pkl
+__pycache__/
+*.pyc

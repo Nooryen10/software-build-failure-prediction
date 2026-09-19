@@ -1,0 +1,143 @@
+{
+  "git_branch": {
+    "kind": "cat"
+  },
+  "git_prev_commit_resolution_status": {
+    "kind": "cat"
+  },
+  "gh_is_pr": {
+    "kind": "bool"
+  },
+  "gh_pull_req_num": {
+    "kind": "float",
+    "min": 0.0,
+    "max": 9622.0,
+    "median": 0.0
+  },
+  "gh_lang": {
+    "kind": "cat"
+  },
+  "gh_team_size": {
+    "kind": "int",
+    "min": 0,
+    "max": 98,
+    "median": 15
+  },
+  "gh_num_issue_comments": {
+    "kind": "float",
+    "min": 0.0,
+    "max": 71.0,
+    "median": 0.0
+  },
+  "gh_num_commit_comments": {
+    "kind": "int",
+    "min": 0,
+    "max": 113,
+    "median": 0
+  },
+  "gh_num_pr_comments": {
+    "kind": "float",
+    "min": 0.0,
+    "max": 887.0,
+    "median": 0.0
+  },
+  "git_diff_src_churn": {
+    "kind": "int",
+    "min": 0,
+    "max": 3734,
+    "median": 0
+  },
+  "gh_diff_files_added": {
+    "kind": "int",
+    "min": 0,
+    "max": 2442,
+    "median": 0
+  },
+  "gh_diff_files_deleted": {
+    "kind": "int",
+    "min": 0,
+    "max": 1401,
+    "median": 0
+  },
+  "gh_diff_files_modified": {
+    "kind": "int",
+    "min": 0,
+    "max": 1775,
+    "median": 2
+  },
+  "gh_diff_src_files": {
+    "kind": "int",
+    "min": 0,
+    "max": 55,
+    "median": 0
+  },
+  "gh_diff_doc_files": {
+    "kind": "int",
+    "min": 0,
+    "max": 5,
+    "median": 0
+  },
+  "gh_diff_other_files": {
+    "kind": "int",
+    "min": 0,
+    "max": 7687,
+    "median": 2
+  },
+  "gh_num_commits_on_files_touched": {
+    "kind": "int",
+    "min": 0,
+    "max": 14906,
+    "median": 72
+  },
+  "gh_sloc": {
+    "kind": "int",
+    "min": 3,
+    "max": 171638,
+    "median": 6774
+  },
+  "gh_test_lines_per_kloc": {
+    "kind": "float",
+    "min": 0.0,
+    "max": 40360.5150214592,
+    "median": 876.143193101646
+  },
+  "gh_test_cases_per_kloc": {
+    "kind": "float",
+    "min": 0.0,
+    "max": 1007.51879699248,
+    "median": 64.1857472250523
+  },
+  "gh_asserts_cases_per_kloc": {
+    "kind": "float",
+    "min": 0.0,
+    "max": 4457.8313253012,
+    "median": 137.986361813077
+  },
+  "gh_by_core_team_member": {
+    "kind": "bool"
+  },
+  "gh_description_complexity": {
+    "kind": "float",
+    "min": 1.0,
+    "max": 7476.0,
+    "median": 21.0
+  },
+  "gh_repo_age": {
+    "kind": "float",
+    "min": 0.0,
+    "max": 4930.29,
+    "median": 1237.45
+  },
+  "gh_repo_num_commits": {
+    "kind": "int",
+    "min": 0,
+    "max": 44055,
+    "median": 2432
+  },
+  "tr_build_number": {
+    "kind": "int",
+    "min": 1,
+    "max": 19094,
+    "median": 1258
+  }
+}

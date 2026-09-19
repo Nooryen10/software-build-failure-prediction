@@ -1,0 +1,314 @@
+{
+  "n_test_builds": 50431,
+  "test_failure_rate": 0.1734449049195931,
+  "bands": [
+    {
+      "band": 1,
+      "score_min": 0.009326272644102573,
+      "score_max": 0.1621282398700714,
+      "n_builds": 10084,
+      "observed_failure_rate": 0.1017453391511305
+    },
+    {
+      "band": 2,
+      "score_min": 0.16214559972286224,
+      "score_max": 0.2849411368370056,
+      "n_builds": 10088,
+      "observed_failure_rate": 0.11528548770816813
+    },
+    {
+      "band": 3,
+      "score_min": 0.284988135099411,
+      "score_max": 0.4414082169532776,
+      "n_builds": 10086,
+      "observed_failure_rate": 0.14158239143367043
+    },
+    {
+      "band": 4,
+      "score_min": 0.44144368171691895,
+      "score_max": 0.6275014877319336,
+      "n_builds": 10086,
+      "observed_failure_rate": 0.19690660321237358
+    },
+    {
+      "band": 5,
+      "score_min": 0.6275352239608765,
+      "score_max": 0.9884548187255859,
+      "n_builds": 10087,
+      "observed_failure_rate": 0.3116883116883117
+    }
+  ],
+  "examples": [
+    {
+      "name": "Failed build, predicted to fail (correct)",
+      "true_outcome": "FAILED",
+      "score_at_export": 0.7367987632751465,
+      "features": {
+        "git_branch": "master",
+        "git_prev_commit_resolution_status": "build_found",
+        "gh_is_pr": false,
+        "gh_pull_req_num": 0.0,
+        "gh_lang": "ruby",
+        "gh_team_size": 7,
+        "gh_num_issue_comments": 0.0,
+        "gh_num_commit_comments": 0,
+        "gh_num_pr_comments": 0.0,
+        "git_diff_src_churn": 0,
+        "gh_diff_files_added": 0,
+        "gh_diff_files_deleted": 0,
+        "gh_diff_files_modified": 1,
+        "gh_diff_src_files": 0,
+        "gh_diff_doc_files": 0,
+        "gh_diff_other_files": 1,
+        "gh_num_commits_on_files_touched": 28,
+        "gh_sloc": 59183,
+        "gh_test_lines_per_kloc": 72.0139229171,
+        "gh_test_cases_per_kloc": 0.033793488,
+        "gh_asserts_cases_per_kloc": 6.319382255,
+        "gh_by_core_team_member": false,
+        "gh_description_complexity": 21.0,
+        "gh_repo_age": 2368.02,
+        "gh_repo_num_commits": 9370,
+        "tr_build_number": 4233
+      }
+    },
+    {
+      "name": "Passed build, predicted to pass (correct)",
+      "true_outcome": "PASSED",
+      "score_at_export": 0.4948490560054779,
+      "features": {
+        "git_branch": "master",
+        "git_prev_commit_resolution_status": "build_found",
+        "gh_is_pr": true,
+        "gh_pull_req_num": 7425.0,
+        "gh_lang": "ruby",
+        "gh_team_size": 53,
+        "gh_num_issue_comments": 0.0,
+        "gh_num_commit_comments": 0,
+        "gh_num_pr_comments": 0.0,
+        "git_diff_src_churn": 0,
+        "gh_diff_files_added": 0,
+        "gh_diff_files_deleted": 0,
+        "gh_diff_files_modified": 1,
+        "gh_diff_src_files": 0,
+        "gh_diff_doc_files": 0,
+        "gh_diff_other_files": 1,
+        "gh_num_commits_on_files_touched": 15,
+        "gh_sloc": 48932,
+        "gh_test_lines_per_kloc": 745.6061473065,
+        "gh_test_cases_per_kloc": 38.0323714543,
+        "gh_asserts_cases_per_kloc": 123.5796615712,
+        "gh_by_core_team_member": true,
+        "gh_description_complexity": 10.0,
+        "gh_repo_age": 1954.76,
+        "gh_repo_num_commits": 37109,
+        "tr_build_number": 7814
+      }
+    },
+    {
+      "name": "Failed build, missed by the model",
+      "true_outcome": "FAILED",
+      "score_at_export": 0.16791237890720367,
+      "features": {
+        "git_branch": "master",
+        "git_prev_commit_resolution_status": "build_found",
+        "gh_is_pr": true,
+        "gh_pull_req_num": 445.0,
+        "gh_lang": "ruby",
+        "gh_team_size": 13,
+        "gh_num_issue_comments": 0.0,
+        "gh_num_commit_comments": 0,
+        "gh_num_pr_comments": 0.0,
+        "git_diff_src_churn": 0,
+        "gh_diff_files_added": 2,
+        "gh_diff_files_deleted": 1,
+        "gh_diff_files_modified": 1,
+        "gh_diff_src_files": 0,
+        "gh_diff_doc_files": 0,
+        "gh_diff_other_files": 5,
+        "gh_num_commits_on_files_touched": 11,
+        "gh_sloc": 2971,
+        "gh_test_lines_per_kloc": 1659.0373611579,
+        "gh_test_cases_per_kloc": 114.4395826321,
+        "gh_asserts_cases_per_kloc": 228.2059912487,
+        "gh_by_core_team_member": true,
+        "gh_description_complexity": 48.0,
+        "gh_repo_age": 1339.37,
+        "gh_repo_num_commits": 1103,
+        "tr_build_number": 1586
+      }
+    },
+    {
+      "name": "Passed build, false alarm",
+      "true_outcome": "PASSED",
+      "score_at_export": 0.7993713021278381,
+      "features": {
+        "git_branch": "2672-footer",
+        "git_prev_commit_resolution_status": "build_found",
+        "gh_is_pr": false,
+        "gh_pull_req_num": 0.0,
+        "gh_lang": "ruby",
+        "gh_team_size": 45,
+        "gh_num_issue_comments": 0.0,
+        "gh_num_commit_comments": 0,
+        "gh_num_pr_comments": 0.0,
+        "git_diff_src_churn": 0,
+        "gh_diff_files_added": 0,
+        "gh_diff_files_deleted": 0,
+        "gh_diff_files_modified": 12,
+        "gh_diff_src_files": 0,
+        "gh_diff_doc_files": 0,
+        "gh_diff_other_files": 12,
+        "gh_num_commits_on_files_touched": 2033,
+        "gh_sloc": 46849,
+        "gh_test_lines_per_kloc": 744.5409720592,
+        "gh_test_cases_per_kloc": 38.1865141198,
+        "gh_asserts_cases_per_kloc": 120.7709876411,
+        "gh_by_core_team_member": true,
+        "gh_description_complexity": 21.0,
+        "gh_repo_age": 1911.95,
+        "gh_repo_num_commits": 35036,
+        "tr_build_number": 5659
+      }
+    },
+    {
+      "name": "Build on a branch not seen in training",
+      "true_outcome": "PASSED",
+      "score_at_export": 0.7064131498336792,
+      "features": {
+        "git_branch": "fix-temporary-point-in-polygon-creation",
+        "git_prev_commit_resolution_status": "build_found",
+        "gh_is_pr": false,
+        "gh_pull_req_num": 0.0,
+        "gh_lang": "ruby",
+        "gh_team_size": 45,
+        "gh_num_issue_comments": 0.0,
+        "gh_num_commit_comments": 0,
+        "gh_num_pr_comments": 0.0,
+        "git_diff_src_churn": 0,
+        "gh_diff_files_added": 0,
+        "gh_diff_files_deleted": 0,
+        "gh_diff_files_modified": 1,
+        "gh_diff_src_files": 0,
+        "gh_diff_doc_files": 0,
+        "gh_diff_other_files": 1,
+        "gh_num_commits_on_files_touched": 56,
+        "gh_sloc": 46769,
+        "gh_test_lines_per_kloc": 743.3984049263,
+        "gh_test_cases_per_kloc": 38.2090701105,
+        "gh_asserts_cases_per_kloc": 120.8065171374,
+        "gh_by_core_team_member": true,
+        "gh_description_complexity": 21.0,
+        "gh_repo_age": 1911.9,
+        "gh_repo_num_commits": 35128,
+        "tr_build_number": 5647
+      }
+    }
+  ],
+  "feature_importance": [
+    {
+      "feature": "git_branch",
+      "importance": 0.08577338606119156
+    },
+    {
+      "feature": "gh_diff_src_files",
+      "importance": 0.07981415092945099
+    },
+    {
+      "feature": "git_prev_commit_resolution_status",
+      "importance": 0.07571640610694885
+    },
+    {
+      "feature": "gh_sloc",
+      "importance": 0.0731590986251831
+    },
+    {
+      "feature": "gh_repo_num_commits",
+      "importance": 0.07064034789800644
+    },
+    {
+      "feature": "gh_team_size",
+      "importance": 0.06157112494111061
+    },
+    {
+      "feature": "gh_test_lines_per_kloc",
+      "importance": 0.06135840713977814
+    },
+    {
+      "feature": "tr_build_number",
+      "importance": 0.060395125299692154
+    },
+    {
+      "feature": "gh_test_cases_per_kloc",
+      "importance": 0.058882709592580795
+    },
+    {
+      "feature": "gh_repo_age",
+      "importance": 0.05863598361611366
+    },
+    {
+      "feature": "gh_asserts_cases_per_kloc",
+      "importance": 0.0543663427233696
+    },
+    {
+      "feature": "gh_pull_req_num",
+      "importance": 0.04190877079963684
+    },
+    {
+      "feature": "gh_by_core_team_member",
+      "importance": 0.040433891117572784
+    },
+    {
+      "feature": "git_diff_src_churn",
+      "importance": 0.020113525912165642
+    },
+    {
+      "feature": "gh_diff_other_files",
+      "importance": 0.019988566637039185
+    },
+    {
+      "feature": "gh_diff_files_modified",
+      "importance": 0.01909688301384449
+    },
+    {
+      "feature": "gh_description_complexity",
+      "importance": 0.018601365387439728
+    },
+    {
+      "feature": "gh_num_commits_on_files_touched",
+      "importance": 0.015388618223369122
+    },
+    {
+      "feature": "gh_diff_files_added",
+      "importance": 0.015149124898016453
+    },
+    {
+      "feature": "gh_is_pr",
+      "importance": 0.014559796079993248
+    },
+    {
+      "feature": "gh_num_issue_comments",
+      "importance": 0.012198132462799549
+    },
+    {
+      "feature": "gh_diff_files_deleted",
+      "importance": 0.011807885020971298
+    },
+    {
+      "feature": "gh_num_pr_comments",
+      "importance": 0.011023933067917824
+    },
+    {
+      "feature": "gh_num_commit_comments",
+      "importance": 0.009784283116459846
+    },
+    {
+      "feature": "gh_diff_doc_files",
+      "importance": 0.00963215809315443
+    },
+    {
+      "feature": "gh_lang",
+      "importance": 0.0
+    }
+  ]
+}
