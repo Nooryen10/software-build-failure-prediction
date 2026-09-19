@@ -1,0 +1,4 @@
+data/raw/
+*.csv.gz
+data/processed/*.csv
+results/*.pkl
