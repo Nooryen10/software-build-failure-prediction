@@ -28,49 +28,24 @@ st.set_page_config(page_title="Build Failure Prediction", layout="wide")
 # Visual identity: a quiet, paper-and-ink research look. The score scale in the
 # result card is the one distinctive element; everything else stays plain.
 # ----------------------------------------------------------------------------
-INK, MUTED, RULE, ACCENT = "#16202A", "#5B6875", "#D5DBE1", "#0B5D7A"
-FAIL, PASS, MID = "#B3261E", "#1B7F4B", "#8F5F12"
-FAIL_SEG, PASS_SEG, MID_SEG = "#E8A39D", "#9FD3B5", "#E9CF9A"
+INK, MUTED, RULE, ACCENT = "#E6EDF3", "#8B98A5", "#26334A", "#38BDF8"
+FAIL, PASS, MID = "#F87171", "#34D399", "#FBBF24"
+FAIL_SEG, PASS_SEG, MID_SEG = "#7F2D33", "#1E6B4E", "#7A5A14"
+PANEL = "#111A2B"
+
 
 CSS = """
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap');
+@import url('https://fonts.googleapis.com/...');
+.stApp { ... }
 .block-container { max-width: 1120px; padding-top: 2rem; padding-bottom: 4rem; }
-[data-testid="stAppDeployButton"], .stDeployButton, #MainMenu, footer { display: none; }
-
-.app-head { border-bottom: 1px solid __RULE__; padding: 0 0 1.1rem 0; margin: 0 0 1rem 0; }
-.app-title { font-family: 'Newsreader', Georgia, 'Times New Roman', serif; font-weight: 600;
-  font-size: 2.15rem; line-height: 1.15; color: __INK__; margin: 0 0 .35rem 0; padding: 0; }
-.app-sub { color: __MUTED__; font-size: 1.05rem; margin: 0; }
-
-.lead { color: __MUTED__; max-width: 46rem; margin: .2rem 0 1rem 0; }
-
-.result { background: #fff; border: 1px solid __RULE__; border-left: 6px solid var(--edge);
-  border-radius: 6px; padding: 1.4rem 1.6rem 1.3rem 1.6rem; margin: .4rem 0 1rem 0; }
-.result.stale { opacity: .55; }
-.verdict { font-family: 'Newsreader', Georgia, 'Times New Roman', serif; font-weight: 600;
-  font-size: 1.85rem; line-height: 1.25; color: __INK__; margin: 0 0 1rem 0; }
-.stats { display: flex; flex-wrap: wrap; gap: .5rem 2.8rem; margin-bottom: .4rem; }
-.stat .k { color: __MUTED__; font-size: .85rem; }
-.stat .v { color: __INK__; font-size: 1.45rem; font-weight: 600; line-height: 1.3; }
-
-.scale { margin: .2rem 0 .2rem 0; }
-.track { position: relative; height: 14px; margin: 2.1rem 0 .55rem 0; }
-.bar { display: flex; height: 100%; border-radius: 3px; overflow: hidden; }
-.bar span { display: block; height: 100%; }
-.pin { position: absolute; top: -7px; bottom: -7px; width: 3px; background: __INK__;
-  transform: translateX(-50%); border-radius: 1px; }
-.pin-val { position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%);
-  white-space: nowrap; font-weight: 600; font-size: .95rem; color: __INK__; padding-bottom: 2px; }
-.thr { position: absolute; top: -4px; bottom: -4px; border-left: 2px dashed __MUTED__; }
-.seg-labels { display: flex; }
-.seg-labels div { box-sizing: border-box; padding-right: .6rem; font-size: .82rem; line-height: 1.35; }
-.seg-labels b { display: block; color: __INK__; font-size: .9rem; }
-.seg-labels span { color: __MUTED__; }
-.result .note { color: __MUTED__; font-size: .9rem; margin: .9rem 0 0 0; }
+...
+.stTabs [data-baseweb="tab"] { border-radius: 8px 8px 0 0; padding: .5rem 1.1rem; }
 """
 for token, value in {"__INK__": INK, "__MUTED__": MUTED, "__RULE__": RULE}.items():
     CSS = CSS.replace(token, value)
 st.markdown(f"<style>{CSS}</style>", unsafe_allow_html=True)
+
+
 
 # ----------------------------------------------------------------------------
 # Feature labels and tooltips
